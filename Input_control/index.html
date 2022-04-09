@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Входной контроль на Frontend</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="form">
+		<form action="https://60376bfd5435040017722533.mockapi.io/form" method="post" id="form" class="form__body">
+			<h1 class="form__title">Задать вопрос</h1>
+			<div class="form__item">
+				<input type="text" pattern="^[А-Яа-яЁё\s]+$" name="username" value="" placeholder="Фамилия Имя Отчество *" class="form__input" />
+			</div>
+			<div class="form__item">
+				<input type="tel" pattern="[0-9]{1,11}" name="phone" value="" placeholder="Телефон *" class="form__input" />
+			</div>
+			<div class="form__item">
+				<input type="email" name="mail" value="" placeholder="Email" class="form__input" />
+			</div>
+			<button type="submit" class="form__button">ОТПРАВИТЬ ЗАПРОС</button>
+		</form>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
